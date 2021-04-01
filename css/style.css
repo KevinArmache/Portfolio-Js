@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #252839;
+}
+
+.logo:hover {
+  color: #40e0d0;
+  transition: all 0.6s linear;
+}
+
+header .en-tete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 3px #40e0d0;
+  height: 10vh;
+  width: 100%;
+}
+header .menu {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+  font-size: 3vh;
+  font-family: Varela;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+header .menu__acceuil {
+  border: solid 2px #252839;
+  color: white;
+  text-decoration: none;
+}
+header .menu__acceuil:hover {
+  border-bottom: solid 2px #40e0d0;
+  color: #40e0d0;
+  transition: all 0.2s linear;
+}
+header .menu__projets {
+  color: white;
+  text-decoration: none;
+  border: solid 2px #252839;
+}
+header .menu__projets:hover {
+  border-bottom: solid 2px #40e0d0;
+  color: #40e0d0;
+  transition: all 0.2s linear;
+}
+header .menu__apropos {
+  color: white;
+  text-decoration: none;
+  border: solid 2px #252839;
+}
+header .menu__apropos:hover {
+  border-bottom: solid 2px #40e0d0;
+  color: #40e0d0;
+  transition: all 0.2s linear;
+}
+header .menu__contacts {
+  color: white;
+  text-decoration: none;
+  border: solid 2px #252839;
+}
+header .menu__contacts:hover {
+  border-bottom: solid 2px #40e0d0;
+  color: #40e0d0;
+  transition: all 0.2s linear;
+}
+header .logo {
+  color: white;
+  height: 8vh;
+  font-size: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Lato;
+  margin-left: 50%;
+}
+
+.box {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5vh;
+  border-radius: 20px;
+  margin-bottom: 5vh;
+  border: solid 2px #252839;
+}
+.box__presentation {
+  color: white;
+  left: 50%;
+  position: relative;
+  transform: translateX(-50%);
+  word-spacing: 10px;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.box:hover {
+  border: solid 2px #40e0d0;
+  transition: all 0.6s linear;
+  border-radius: 20px;
+}
+
+.brief {
+  display: flex;
+  margin: 0 auto;
+  color: white;
+  justify-content: space-between;
+  width: 80%;
+  height: 20vh;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+.brief__projets {
+  font-size: 20px;
+  word-spacing: 10px;
+  padding: 10px;
+  width: 45%;
+  height: 10vh;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: solid 2px #252839;
+  display: flex;
+  align-items: center;
+}
+.brief__projets:hover {
+  border: solid 2px #40e0d0;
+  transition: all 0.6s linear;
+}
+.brief__projets__texte {
+  color: white;
+  text-decoration: none;
+}
+.brief__apropos {
+  font-size: 20px;
+  word-spacing: 10px;
+  padding: 10px;
+  width: 45%;
+  margin: 0 auto;
+  height: 10vh;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  border: solid 2px #252839;
+  display: flex;
+  align-items: center;
+}
+.brief__apropos:hover {
+  border: solid 2px #40e0d0;
+  transition: all 0.6s linear;
+}
+.brief__apropos__texte {
+  color: white;
+  text-decoration: none;
+}
+
+.box-logo {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.mes__projets {
+  height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4vh;
+}
+
+#mes__projets__apercu1 {
+  border: solid 5px #252839;
+  height: 45%;
+  width: 40%;
+}
+#mes__projets__apercu1:hover {
+  border-radius: 20px;
+  border: solid 5px #40e0d0;
+  transition: all 0.6s linear;
+  border-radius: 20px;
+}
+#mes__projets__apercu1__site1 {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#mes__projets__apercu2 {
+  border: solid 5px #252839;
+  height: 45%;
+  width: 40%;
+}
+#mes__projets__apercu2:hover {
+  border: solid 5px #40e0d0;
+  transition: all 0.6s linear;
+  border-radius: 20px;
+}
+#mes__projets__apercu2__site2 {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#mes__projets__apercu3 {
+  border: solid 5px #252839;
+  height: 45%;
+  width: 40%;
+}
+#mes__projets__apercu3:hover {
+  border: solid 5px #40e0d0;
+  transition: all 0.6s linear;
+  border-radius: 20px;
+}
+#mes__projets__apercu3__site3 {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+#mes__projets__apercu4 {
+  border: solid 5px #252839;
+  height: 45%;
+  width: 40%;
+}
+#mes__projets__apercu4:hover {
+  border: solid 5px #40e0d0;
+  transition: all 0.6s linear;
+  border-radius: 20px;
+}
+#mes__projets__apercu4__site4 {
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.mes__competences {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.mes__competences__mot {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  border: solid 2px #252839;
+  width: 15%;
+}
+.mes__competences__mot:hover {
+  border-bottom: solid 2px #40e0d0;
+  border-top: solid 2px #40e0d0;
+  transition: all 0.6s linear;
+}
+
+/*# sourceMappingURL=style.css.map */

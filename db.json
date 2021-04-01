@@ -1,0 +1,17 @@
+{
+  "box": [
+    {
+      "box__presentation": "Salut je m'appelle Kevin Armache je suis un developpeur fullstack je maitrise le front-end ainsi que le back-end, aussi capable de ressoudre des problemes, travailler sur chaque étape de création d’un site ou d’une application, du développement à la production."
+    }
+  ],
+
+  "brief__projets": [
+    {
+      "brief__projets__texte": "Voici quelques une de mes realisations concernant mon parcours en developpement web."
+    }
+  ],
+
+  "brief__apropos": [{
+    "brief__apropos__texte" : "Voici quelques mots me concernant ainsi que mes competences en terme techniques."
+  }]
+}
