@@ -1,0 +1,87 @@
+@mixin mediaqueries {
+    @media screen and (max-width: 400px) {
+    .en-tete {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .logo {
+      margin-left: 0% !important;
+    }
+    .box_logos {
+      margin-top: 50px !important;
+    }
+
+  }
+  
+  @media screen and (max-width: 550px) {
+
+  
+  }
+  
+
+
+@media screen and (max-width: 1150px) {
+    .mes__projets {
+      width: 100%;
+    }
+      .box {
+      width: 90% !important;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .mes__projets {
+      display: flex;
+      flex-direction: column !important;
+      height: 100%;
+      width: 90%;
+    }
+    #mes__projets__apercu1 {
+      width: 90%;
+    }
+    #mes__projets__apercu2 {
+      width: 90%;
+    }
+    #mes__projets__apercu3 {
+      width: 90%;
+    }
+    #mes__projets__apercu4 {
+      width: 90%;
+    }
+    .mes__competences__mot {
+      width: 30%;
+    } 
+    .mes_contacts__texte {
+      width: 30%;
+    }
+  
+    .brief {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 90%;
+    
+      &__projets {
+        align-items: flex-start;
+        width: 90%;
+        padding: 10px;
+      }
+      &__apropos {
+        align-items: flex-start;
+        width: 90%;
+        padding: 10px;
+      }
+    }
+
+  }
+  @media screen and (max-width: 500px) {
+    .mes_contacts__images  {
+      width: 90%;
+    }
+    .mes__competences__mot {
+        width: 50%;
+        margin-bottom: -10px;
+      } 
+  }
+}

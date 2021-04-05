@@ -4,9 +4,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px $couleur_secondaire;
-    height: 10vh;
+
     width: 100%;
-   
   }
 
   .menu {
@@ -18,7 +17,7 @@
     padding-top: 2vh;
     padding-bottom: 2vh;
     // border: solid 2px white;
-    
+
     &__acceuil {
       border: solid 2px #252839;
       color: $couleur_primaire;
@@ -33,11 +32,6 @@
       color: $couleur_primaire;
       text-decoration: none;
       border: solid 2px #252839;
-      &:hover {
-        border-bottom: solid 2px $couleur_secondaire;
-        color: $couleur_secondaire;
-        transition: all 0.2s linear;
-      }
     }
     &__apropos {
       color: $couleur_primaire;
@@ -64,11 +58,13 @@
   .logo {
     color: $couleur_primaire;
     height: 8vh;
-    font-size: 40px;
+    font-size: 50px;
     justify-content: center;
     display: flex;
     align-items: center;
     font-family: Lato;
     margin-left: 50%;
+    text-decoration: none;
   }
 }
+
