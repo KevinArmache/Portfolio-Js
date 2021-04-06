@@ -1,3 +1,131 @@
+@media screen and (max-width: 605px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh !important;
+  }
+  .brief__projets {
+    width: 65% !important;
+    height: 15vh !important;
+  }
+  .brief__apropos {
+    width: 65% !important;
+    height: 15vh !important;
+  }
+
+  .box {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .box__presentation {
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  }
+  .brief__projets {
+    width: 100%;
+  }
+  .brief__apropos {
+    width: 100%;
+  }
+
+  .mes_contacts__texte {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  }
+  .brief__projets {
+    width: 80% !important;
+  }
+  .brief__apropos {
+    width: 80% !important;
+  }
+}
+@media screen and (max-width: 605px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh !important;
+  }
+  .brief__projets {
+    width: 65% !important;
+    height: 15vh !important;
+  }
+  .brief__apropos {
+    width: 65% !important;
+    height: 15vh !important;
+  }
+
+  .box {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .box__presentation {
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  }
+  .brief__projets {
+    width: 100%;
+  }
+  .brief__apropos {
+    width: 100%;
+  }
+
+  .mes_contacts__texte {
+    width: 40% !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  }
+  .brief__projets {
+    width: 80% !important;
+  }
+  .brief__apropos {
+    width: 80% !important;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +172,11 @@ header .menu__projets {
   text-decoration: none;
   border: solid 2px #252839;
 }
+header .menu__projets:hover {
+  border-bottom: solid 2px #40e0d0;
+  color: #40e0d0;
+  transition: all 0.2s linear;
+}
 header .menu__apropos {
   color: white;
   text-decoration: none;
@@ -81,21 +214,41 @@ header .logo {
   margin: 0 auto;
   margin-top: 5vh;
   border-radius: 20px;
-  margin-bottom: 5vh;
-  border: solid 2px #252839;
+  border: solid 4px #252839;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.box__ma_photo {
+  height: 170px;
+  width: 170px;
+  border: solid 5px white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box__ma_photo:hover {
+  border: solid 5px #40e0d0;
+  transition: all 0.5s linear;
+}
+.box__ma_photo #box__ma_photo__photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
 }
 .box__presentation {
   color: white;
-  left: 50%;
-  position: relative;
-  transform: translateX(-50%);
   word-spacing: 10px;
   font-size: 30px;
   padding: 20px;
   border-radius: 20px;
+  width: 80%;
 }
 .box:hover {
-  border: solid 2px #40e0d0;
+  border: solid 4px #40e0d0;
   transition: all 0.5s linear;
   border-radius: 20px;
 }
@@ -106,35 +259,44 @@ header .logo {
   color: white;
   justify-content: space-between;
   width: 80%;
-  height: 20vh;
+  height: 25vh;
   align-items: center;
   margin-bottom: 3vh;
+  overflow: hidden;
 }
 .brief__projets {
-  font-size: 20px;
+  font-size: 2rem;
   word-spacing: 10px;
-  padding: 10px;
-  width: 45%;
+  padding: 3px 5px;
+  width: 30%;
   height: 15vh;
   margin: 0 auto;
   border-radius: 20px;
   border: solid 2px #252839;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 60%;
+  border: solid 1px #40e0d0;
 }
 .brief__projets:hover {
-  border: solid 2px #40e0d0;
-  transition: all 0.5s linear;
+  border: solid 4px #40e0d0;
+  transition: all 0.2s linear;
 }
 .brief__projets__texte {
   color: white;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .brief__apropos {
-  font-size: 20px;
+  font-size: 2rem;
   word-spacing: 10px;
-  padding: 10px;
-  width: 45%;
+  padding: 3px 5px;
+  width: 30%;
   margin: 0 auto;
   height: 15vh;
   color: white;
@@ -143,20 +305,28 @@ header .logo {
   border: solid 2px #252839;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 60%;
+  border: solid 1px #40e0d0;
 }
 .brief__apropos:hover {
-  border: solid 2px #40e0d0;
-  transition: all 0.5s linear;
+  border: solid 4px #40e0d0;
+  transition: all 0.2s linear;
 }
 .brief__apropos__texte {
   color: white;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box_logos {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -282,6 +452,7 @@ header .logo {
   color: #40e0d0;
   border-radius: 100%;
 }
+
 .mes_contacts {
   margin-top: 2vh;
   display: flex;
@@ -322,20 +493,7 @@ header .logo {
   transition: all 1s linear;
 }
 
-@media screen and (max-width: 600px) {
-  .brief {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-  .brief__projets {
-    width: 100%;
-  }
-  .brief__apropos {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .en-tete {
     display: flex;
     align-items: center;
@@ -349,6 +507,9 @@ header .logo {
 
   .box_logos {
     margin-top: 50px !important;
+    display: flex;
+    justify-content: space-evenly;
+    width: 0%;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -394,18 +555,29 @@ header .logo {
 
   .brief {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     width: 90%;
   }
   .brief__projets {
     align-items: flex-start;
-    width: 90%;
-    padding: 10px;
+    width: 35%;
+    padding: 5px;
+    align-items: center;
   }
   .brief__apropos {
     align-items: flex-start;
-    width: 90%;
+    width: 35%;
+    padding: 5px;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .box__presentation {
+    width: 100%;
     padding: 10px;
   }
 }

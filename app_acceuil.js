@@ -1,4 +1,22 @@
 window.onload = function () {
+
+  const box__ma_photo = document.querySelector(".box__ma_photo")
+  const box__ma_photo__photo = document.createElement("img")
+  box__ma_photo__photo.setAttribute("id", "box__ma_photo__photo")
+  box__ma_photo.appendChild(box__ma_photo__photo)
+  fetch("http://localhost:3000/box")
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function(data){
+    for(let i of data) {
+     
+      box__ma_photo__photo.setAttribute("src", `${i.box__ma_photo__photo}`)
+    }
+  })
+
+
+  //
   const box__presentation = document.querySelector(".box__presentation");
   fetch("http://localhost:3000/box")
     .then(function (response) {
@@ -55,6 +73,7 @@ fetch("http://localhost:3000/box_logos")
       let content2 = document.createElement("img");
       let content3 = document.createElement("img");
       let content4 = document.createElement("img");
+      content1.setAttribute("id", "icon");
       content1.setAttribute("src", `${i["box_logo__logo1"]}`);
       content2.setAttribute("src", `${i["box_logo__logo2"]}`);
       content3.setAttribute("src", `${i["box_logo__logo3"]}`);
@@ -71,3 +90,9 @@ fetch("http://localhost:3000/box_logos")
 //   Element.add.classList('border')
 //   Image.add.classList('border')
 // }
+
+
+
+
+//-----------------------------------------------
+

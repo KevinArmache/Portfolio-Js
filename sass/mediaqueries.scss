@@ -1,5 +1,5 @@
 @mixin mediaqueries {
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 450px) {
     .en-tete {
       display: flex;
       align-items: center;
@@ -11,15 +11,14 @@
     }
     .box_logos {
       margin-top: 50px !important;
+      display: flex;
+      justify-content: space-evenly;
+      width: 0%;
     }
 
   }
   
-  @media screen and (max-width: 550px) {
 
-  
-  }
-  
 
 
 @media screen and (max-width: 1150px) {
@@ -58,18 +57,31 @@
   
     .brief {
       display: flex;
-      flex-direction: column;
       justify-content: space-evenly;
+      
       width: 90%;
     
       &__projets {
         align-items: flex-start;
-        width: 90%;
-        padding: 10px;
+        width: 35%;
+        padding: 5px;
+        align-items: center;
+      
       }
       &__apropos {
         align-items: flex-start;
-        width: 90%;
+        width: 35%;
+        padding: 5px;
+        align-items: center;
+      }
+    }
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      &__presentation {
+        width: 100%;
         padding: 10px;
       }
     }
@@ -83,5 +95,79 @@
         width: 50%;
         margin-bottom: -10px;
       } 
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 35vh !important;
+
+  
+    &__projets {
+      width: 65% !important;
+      height: 15vh !important;
+    }
+    &__apropos {
+      width: 65% !important;
+      height: 15vh !important;
+    }
+  }
+  .box {
+    margin-bottom: 50px;
+   
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    &__presentation {
+      width: 100%;
+      padding: 0px !important;
+    }
+  }
+
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    height: 50vh !important;
+    align-items: center !important;
+  
+    &__projets {
+      width: 100%;
+    }
+    &__apropos {
+      width: 100%;
+    }
+  }
+  .mes_contacts__texte {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  
+    &__projets {
+      width: 80% !important;
+    }
+    &__apropos {
+      width: 80% !important;
+    }
   }
 }

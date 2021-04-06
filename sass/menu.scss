@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px $couleur_secondaire;
-
     width: 100%;
   }
 
@@ -32,6 +31,11 @@
       color: $couleur_primaire;
       text-decoration: none;
       border: solid 2px #252839;
+      &:hover {
+        border-bottom: solid 2px $couleur_secondaire;
+        color: $couleur_secondaire;
+        transition: all 0.2s linear;
+      }
     }
     &__apropos {
       color: $couleur_primaire;

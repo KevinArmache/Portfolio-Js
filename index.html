@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
     />
@@ -22,7 +26,7 @@
       <nav>
         <div class="en-tete">
           <div>
-            <p class="logo">&lt;K/A&gt;</p>
+            <a class="logo" href="index.html">&lt;K/A&gt;</a>
           </div>
           <div class="menu">
             <a class="menu__acceuil" href="index.html">Acceuil</a>
@@ -35,15 +39,17 @@
 
     <section>
       <div class="box">
+        <div class="box__ma_photo animate__animated animate__tada"></div>
         <p class="box__presentation"></p>
+       
       </div>
 
       <div class="brief">
-        <div class="brief__projets">
-          <a class="brief__projets__texte" href=""> </a>
+        <div class="brief__projets animate__animated  animate__backInLeft">
+          <a class="brief__projets__texte" href="projets.html"></a>
         </div>
-        <div class="brief__apropos">
-          <a class="brief__apropos__texte" href=""> </a>
+        <div class="brief__apropos animate__animated  animate__backInRight">
+          <a class="brief__apropos__texte" href="contacts.html"></a>
         </div>
       </div>
     </section>
@@ -51,6 +57,10 @@
     <div class="box_logos">
     </div>
 
+ 
+    
+
     <script src="app_acceuil.js"></script>
   </body>
 </html>
+

@@ -9,6 +9,7 @@ $couleur_secondaire: #40e0d0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 body {
@@ -26,22 +27,46 @@ header {
   margin: 0 auto;
   margin-top: 5vh;
   border-radius: 20px;
-  margin-bottom: 5vh;
-  border: solid 2px #252839;
+  border: solid 4px #252839;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.5s linear;
+  overflow: hidden;
+
+  &__ma_photo {
+    height: 170px;
+    width: 170px;
+    border: solid 5px $couleur_primaire;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      border: solid 5px $couleur_secondaire;
+      transition: all 0.5s linear;
+  
+    }
+    #box__ma_photo__photo {
+      height: 150px;
+      width: 150px;
+      border-radius: 100%;
+    }
+  
+  }
 
   &__presentation {
     color: $couleur_primaire;
-    left: 50%;
-    position: relative;
-    transform: translateX(-50%);
     word-spacing: 10px;
     font-size: 30px;
     padding: 20px;
-
     border-radius: 20px;
+    width: 80%;
+    
+   
   }
   &:hover {
-    border: solid 2px $couleur_secondaire;
+    border: solid 4px $couleur_secondaire;
     transition: all 0.5s linear;
     border-radius: 20px;
   }
@@ -53,35 +78,46 @@ header {
   color: $couleur_primaire;
   justify-content: space-between;
   width: 80%;
-  height: 20vh;
+  height: 25vh;
   align-items: center;
   margin-bottom: 3vh;
+  overflow: hidden;
 
   &__projets {
-    font-size: 20px;
+    font-size: 2rem;
     word-spacing: 10px;
-    padding: 10px;
-    width: 45%;
+    padding: 3px 5px;
+    width: 30%;
     height: 15vh;
     margin: 0 auto;
     border-radius: 20px;
     border: solid 2px #252839;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 60%;
+    border: solid 1px $couleur_secondaire;
+
     &:hover {
-      border: solid 2px $couleur_secondaire;
-      transition: all 0.5s linear;
+      border: solid 4px $couleur_secondaire;
+      transition: all 0.2s linear;
+
     }
     &__texte {
       color: $couleur_primaire;
       text-decoration: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &__apropos {
-    font-size: 20px;
+    font-size: 2rem;
     word-spacing: 10px;
-    padding: 10px;
-    width: 45%;
+    padding: 3px 5px;
+    width: 30%;
     margin: 0 auto;
     height: 15vh;
     color: $couleur_primaire;
@@ -90,13 +126,23 @@ header {
     border: solid 2px #252839;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 60%;
+    border: solid 1px $couleur_secondaire;
+
     &:hover {
-      border: solid 2px $couleur_secondaire;
-      transition: all 0.5s linear;
+      border: solid 4px $couleur_secondaire;
+      transition: all 0.2s linear;
+      
     }
     &__texte {
       color: $couleur_primaire;
       text-decoration: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
@@ -104,8 +150,9 @@ header {
 .box_logos {
   display: flex;
   justify-content: space-evenly;
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
+
 }
 
 .mes__projets {
@@ -191,6 +238,7 @@ header {
     color: $couleur_primaire;
     border: solid 2px #252839;
 
+
     width: 20%;
     &:hover {
       border-bottom: solid 2px $couleur_secondaire;
@@ -225,8 +273,7 @@ header {
     border: solid 5px $couleur_secondaire;
     color: $couleur_secondaire;
     border-radius: 100%;
-    &:hover {
-    }
+
   }
 }
 
@@ -269,26 +316,20 @@ header {
       border-top: none;
       border-bottom: none;
       transition: all 1s linear;
+    
+
+      
     }
   }
 }
 
-@media screen and (max-width: 600px) {
-  .brief {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  
-    &__projets {
-      width: 100%;
-    }
-    &__apropos {
-      width: 100%;
-    }
-  }
-}
+
 
 
 
 
 @include mediaqueries;
+
+//-----------------------
+
+
