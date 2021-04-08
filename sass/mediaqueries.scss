@@ -1,4 +1,36 @@
 @mixin mediaqueries {
+
+@media screen and (max-width: 700px) {
+
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    &--presentation {
+      width: 100%;
+      padding: 0px !important;
+    }
+  }
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50vh !important;
+    align-items: center !important;
+  
+    &__projets {
+      width: 80% !important;
+    }
+    &__apropos {
+      width: 80% !important;
+    }
+    .mes_contacts--texte {
+      width: 40% !important;
+    }
+  }
+}
     @media screen and (max-width: 450px) {
     .en-tete {
       display: flex;
@@ -15,7 +47,9 @@
       justify-content: space-evenly;
       width: 0%;
     }
-
+    .mes_contacts__images_Twitch {
+      display: none;
+    }
   }
   
 
@@ -29,31 +63,42 @@
       width: 90% !important;
     }
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 500px) {
     .mes__projets {
       display: flex;
       flex-direction: column !important;
       height: 100%;
       width: 90%;
-    }
-    #mes__projets__apercu1 {
+    }  #mes__projets__apercu1 {
       width: 90%;
+      &--site1 {
+        height: 100%;
+        width: 100%;
+      }
     }
     #mes__projets__apercu2 {
       width: 90%;
+      &--site2 {
+        height: 100%;
+        width: 100%;
+      }
     }
     #mes__projets__apercu3 {
       width: 90%;
+      &--site3 {
+        height: 100%;
+        width: 100%;
+      }
     }
     #mes__projets__apercu4 {
       width: 90%;
+      &--site4 {
+        height: 100%;
+        width: 100%;
+      }
     }
-    .mes__competences__mot {
-      width: 30%;
-    } 
-    .mes_contacts__texte {
-      width: 30%;
-    }
+    @media screen and (max-width: 900px) {
+
   
     .brief {
       display: flex;
@@ -66,7 +111,7 @@
         width: 35%;
         padding: 5px;
         align-items: center;
-      
+        
       }
       &__apropos {
         align-items: flex-start;
@@ -80,7 +125,7 @@
       display: flex;
       flex-direction: column;
       padding: 10px;
-      &__presentation {
+      &--presentation {
         width: 100%;
         padding: 10px;
       }
@@ -91,7 +136,7 @@
     .mes_contacts__images  {
       width: 90%;
     }
-    .mes__competences__mot {
+    .mes__competences--texte {
         width: 50%;
         margin-bottom: -10px;
       } 
@@ -109,65 +154,57 @@
   
     &__projets {
       width: 65% !important;
-      height: 15vh !important;
+   
     }
     &__apropos {
       width: 65% !important;
-      height: 15vh !important;
+     
     }
   }
   .box {
     margin-bottom: 50px;
    
   }
+  .mes_contacts--texte {
+    width: 50% !important;
+  }
+  .light {
+    display: none;
+  }
 }
-
-@media screen and (max-width: 400px) {
-
-  .box {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-    &__presentation {
-      width: 100%;
-      padding: 0px !important;
-    }
+}
+@media screen and (max-height: 1100px) {
+  .brief__apropos {
+    height: 10vh !important;
+    width: 40% !important;
   }
-
-  .brief {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-   
-    height: 50vh !important;
-    align-items: center !important;
-  
-    &__projets {
-      width: 100%;
-    }
-    &__apropos {
-      width: 100%;
-    }
-  }
-  .mes_contacts__texte {
+  .brief__projets {
+    height: 10vh !important;
     width: 40% !important;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .brief {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 50vh !important;
-    align-items: center !important;
-  
-    &__projets {
-      width: 80% !important;
-    }
-    &__apropos {
-      width: 80% !important;
-    }
+
+@media screen and (max-width: 380px) {
+  .mes_contacts__images_Discord {
+    display: none;
   }
+
 }
+
+@media screen and (max-width: 280px) {
+  .mes_contacts__images_Twitter {
+    display: none;
+  }
+
+}
+
+
+// @media (prefers-color-scheme: light) {
+//   html {
+//   filter: invert(100%);
+//   }
+
+//  }
+
+

@@ -17,7 +17,7 @@
     padding-bottom: 2vh;
     // border: solid 2px white;
 
-    &__acceuil {
+    &--acceuil {
       border: solid 2px #252839;
       color: $couleur_primaire;
       text-decoration: none;
@@ -27,7 +27,7 @@
         transition: all 0.2s linear;
       }
     }
-    &__projets {
+    &--projets {
       color: $couleur_primaire;
       text-decoration: none;
       border: solid 2px #252839;
@@ -37,17 +37,7 @@
         transition: all 0.2s linear;
       }
     }
-    &__apropos {
-      color: $couleur_primaire;
-      text-decoration: none;
-      border: solid 2px #252839;
-      &:hover {
-        border-bottom: solid 2px $couleur_secondaire;
-        color: $couleur_secondaire;
-        transition: all 0.2s linear;
-      }
-    }
-    &__contacts {
+    &--contacts {
       color: $couleur_primaire;
       text-decoration: none;
       border: solid 2px #252839;

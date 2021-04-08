@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
@@ -25,9 +28,13 @@
             <a class="logo" href="index.html">&lt;K/A&gt;</a>
           </div>
           <div class="menu">
-            <a class="menu__acceuil" href="index.html">Acceuil</a>
-            <a class="menu__projets" href="projets.html">Projets</a>
-            <a class="menu__contacts" href="contacts.html">Contacts</a>
+            <a class="menu--acceuil" href="index.html">Acceuil</a>
+            <a class="menu--projets" href="projets.html">Projets</a>
+            <a class="menu--contacts" href="contacts.html">Contacts</a>
+            <button class="light">
+              <img src="./logo/paint-light.svg" alt="">
+              <p class="light--texte">Light</p>
+            </button>
           </div>
         </div>
       </nav>
@@ -37,10 +44,13 @@
     </section>
     <section>
       <div class="mes__competences">
-        <p class="mes__competences__mot"></p>
+        <p class="mes__competences--texte"></p>
       </div>
-      <div class="box_logos"></div>
+      <div class="box_logos">
+       
+      </div>
     </section>
     <script src="app_projets.js"></script>
+    <script src="./Js/DarkLight.js"></script>
   </body>
 </html>

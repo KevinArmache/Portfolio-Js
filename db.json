@@ -10,7 +10,6 @@
     {
       "brief__projets__texte": "Mes projets"
     }
-
   ],
 
   "brief__apropos": [
@@ -39,9 +38,19 @@
       "icones_contacts__logo": "<K/A>"
     }
   ],
-  "mes_contacts": [{
-    "mes_contacts__texte": "Contacts"
-  }],
+  "mes_contacts": [
+    {
+      "mes_contacts__texte": "Contacts"
+    }
+  ],
+  "reseaux_sociaux": [
+    "Facebook",
+    "Whatsapp",
+    "Twitter",
+    "Mail",
+    "Discord",
+    "Twitch"
+  ],
 
   "mes_contacts__reseaux_sociaux": [
     "./logo/fb.svg",
@@ -50,5 +59,18 @@
     "./logo/mail.svg",
     "./logo/discord.svg",
     "./logo/twitch.svg"
+  ],
+  "CV": [
+    {
+      "CV_icone": "./logo/file-pdf-solid.svg"
+    }
+  ],
+
+  "mode_light": [
+    {
+      "icone_light": "./logo/paint-light.svg"
+    }
   ]
+
+  
 }

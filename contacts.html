@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="app_contacts.js"></script>
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -25,9 +25,13 @@
             <a class="logo" href="index.html">&lt;K/A&gt;</a>
           </div>
           <div class="menu">
-            <a class="menu__acceuil" href="index.html">Acceuil</a>
-            <a class="menu__projets" href="projets.html">Projets</a>
-            <a class="menu__contacts" href="contacts.html">Contacts</a>
+            <a class="menu--acceuil" href="index.html">Acceuil</a>
+            <a class="menu--projets" href="projets.html">Projets</a>
+            <a class="menu--contacts" href="contacts.html">Contacts</a>
+            <button class="light">
+              <img src="./logo/paint-light.svg" alt="">
+              <p class="light--texte">Light</p>
+            </button>
           </div>
         </div>
       </nav>
@@ -35,13 +39,16 @@
 
     <section>
       <div class="icone_contacts">
-        <p class="icone_contacts__logo"></p>
+        <p class="icone_contacts--logo"></p>
       </div>
       <div class="mes_contacts">
-        <p class="mes_contacts__texte"></p>
+        <p class="mes_contacts--texte"></p>
       </div>
 
       <div class="mes_contacts__reseaux_sociaux"></div>
+      <div class="CV"></div>
     </section>
+    <script src="app_contacts.js"></script>
+    <script src="./Js/DarkLight.js"></script>
   </body>
 </html>

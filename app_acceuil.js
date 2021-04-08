@@ -2,7 +2,7 @@ window.onload = function () {
 
   const box__ma_photo = document.querySelector(".box__ma_photo")
   const box__ma_photo__photo = document.createElement("img")
-  box__ma_photo__photo.setAttribute("id", "box__ma_photo__photo")
+  box__ma_photo__photo.setAttribute("id", "box__ma_photo--photo")
   box__ma_photo.appendChild(box__ma_photo__photo)
   fetch("http://localhost:3000/box")
   .then(function (response) {
@@ -17,7 +17,7 @@ window.onload = function () {
 
 
   //
-  const box__presentation = document.querySelector(".box__presentation");
+  const box__presentation = document.querySelector(".box--presentation");
   fetch("http://localhost:3000/box")
     .then(function (response) {
       return response.json();
@@ -30,7 +30,7 @@ window.onload = function () {
     });
   //
   const brief__projets__texte = document.querySelector(
-    ".brief__projets__texte"
+    ".brief__projets--texte"
   );
 
   fetch("http://localhost:3000/brief__projets")
@@ -47,7 +47,7 @@ window.onload = function () {
   //
 
   const brief__apropos__texte = document.querySelector(
-    ".brief__apropos__texte"
+    ".brief__apropos--texte"
   );
   fetch("http://localhost:3000/brief__apropos")
     .then(function (response) {
@@ -93,6 +93,4 @@ fetch("http://localhost:3000/box_logos")
 
 
 
-
-//-----------------------------------------------
 

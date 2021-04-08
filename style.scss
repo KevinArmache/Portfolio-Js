@@ -9,7 +9,6 @@ $couleur_secondaire: #40e0d0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- 
 }
 
 body {
@@ -45,25 +44,21 @@ header {
     &:hover {
       border: solid 5px $couleur_secondaire;
       transition: all 0.5s linear;
-  
     }
-    #box__ma_photo__photo {
+    #box__ma_photo--photo {
       height: 150px;
       width: 150px;
       border-radius: 100%;
     }
-  
   }
 
-  &__presentation {
+  &--presentation {
     color: $couleur_primaire;
     word-spacing: 10px;
     font-size: 30px;
     padding: 20px;
     border-radius: 20px;
     width: 80%;
-    
-   
   }
   &:hover {
     border: solid 4px $couleur_secondaire;
@@ -101,9 +96,8 @@ header {
     &:hover {
       border: solid 4px $couleur_secondaire;
       transition: all 0.2s linear;
-
     }
-    &__texte {
+    &--texte {
       color: $couleur_primaire;
       text-decoration: none;
       width: 100%;
@@ -133,9 +127,8 @@ header {
     &:hover {
       border: solid 4px $couleur_secondaire;
       transition: all 0.2s linear;
-      
     }
-    &__texte {
+    &--texte {
       color: $couleur_primaire;
       text-decoration: none;
       width: 100%;
@@ -152,7 +145,6 @@ header {
   justify-content: space-evenly;
   width: 60%;
   margin: 0 auto;
-
 }
 
 .mes__projets {
@@ -164,19 +156,19 @@ header {
   width: 80%;
   margin: 0 auto;
   margin-top: 4vh;
+  overflow: hidden;
 }
 #mes__projets__apercu1 {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
-
   &:hover {
     border-radius: 20px;
     border: solid 5px $couleur_secondaire;
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &__site1 {
+  &--site1 {
     border-radius: 20px;
     height: 100%;
     width: 100%;
@@ -191,12 +183,13 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &__site2 {
+  &--site2 {
     border-radius: 20px;
     height: 100%;
     width: 100%;
   }
 }
+
 #mes__projets__apercu3 {
   border: solid 5px #252839;
   height: 45%;
@@ -206,7 +199,7 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &__site3 {
+  &--site3 {
     border-radius: 20px;
     height: 100%;
     width: 100%;
@@ -221,10 +214,11 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &__site4 {
+  &--site4 {
     border-radius: 20px;
     height: 100%;
     width: 100%;
+    filter: invert(0%);
   }
 }
 .mes__competences {
@@ -232,12 +226,11 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  &__mot {
+  &--texte {
     text-align: center;
     font-size: 30px;
     color: $couleur_primaire;
     border: solid 2px #252839;
-
 
     width: 20%;
     &:hover {
@@ -259,7 +252,7 @@ header {
   justify-content: center;
   align-items: center;
   transition: all 1s linear;
-  &__logo {
+  &--logo {
     border: solid 5px $couleur_primaire;
     padding: 50px;
     font-size: 50px;
@@ -273,7 +266,6 @@ header {
     border: solid 5px $couleur_secondaire;
     color: $couleur_secondaire;
     border-radius: 100%;
-
   }
 }
 
@@ -282,7 +274,8 @@ header {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  &__texte {
+  transition: all 1s linear;
+  &--texte {
     text-align: center;
     font-size: 30px;
     color: $couleur_primaire;
@@ -308,6 +301,7 @@ header {
     transition: all 1s linear;
     border-left: solid 5px #252839;
     border-right: solid 5px #252839;
+    transition: all 1s linear;
 
     &:hover {
       border-left: solid 5px $couleur_secondaire;
@@ -316,20 +310,136 @@ header {
       border-top: none;
       border-bottom: none;
       transition: all 1s linear;
-    
-
-      
     }
   }
 }
+.CV {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: solid 5px $couleur_primaire;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  &:hover {
+    border: solid 5px $couleur_secondaire;
+    transition: all 1s linear;
+  }
+}
 
-
-
-
-
+.light {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 2px #252839;
+  width: 10%;
+  padding-bottom: 5px;
+  background-color: #252839;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  color: white;
+  font-family: Lato;
+  &:hover {
+    border-bottom: solid 2px $couleur_secondaire;
+    transition: all 0.2s linear;
+  }
+}
 
 @include mediaqueries;
 
-//-----------------------
+//---------progress bar--------------
+
+
+
+progress {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+
+}
+.barre_de_progression1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.barre_de_progression--jauge1::-webkit-progress-bar {
+  background-color: white;
+  margin-top: 2px;
+  height: 50%;
+  border-radius: 5px;
+  
+}
+.barre_de_progression--jauge1::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: turquoise;
+}
+
+//progress bar 2
+
+
+.barre_de_progression2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.barre_de_progression--jauge2::-webkit-progress-bar {
+  background-color: white;
+  margin-top: 2px;
+  height: 50%;
+  border-radius: 5px;
+  
+}
+.barre_de_progression--jauge2::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: turquoise;
+}
+
+
+//progress bar 3
+
+
+.barre_de_progression3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.barre_de_progression--jauge3::-webkit-progress-bar {
+  background-color: white;
+  margin-top: 2px;
+  height: 50%;
+  border-radius: 5px;
+  
+}
+.barre_de_progression--jauge3::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: turquoise;
+}
+
+//progress bar 4
+
+
+.barre_de_progression4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.barre_de_progression--jauge4::-webkit-progress-bar {
+  background-color: white;
+  margin-top: 2px;
+  height: 50%;
+  border-radius: 5px;
+  
+}
+.barre_de_progression--jauge4::-webkit-progress-value {
+  border-radius: 5px;
+  background-color: turquoise;
+}
+
 
 

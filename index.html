@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link class="css" rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"
       rel="stylesheet"
@@ -29,9 +29,13 @@
             <a class="logo" href="index.html">&lt;K/A&gt;</a>
           </div>
           <div class="menu">
-            <a class="menu__acceuil" href="index.html">Acceuil</a>
-            <a class="menu__projets" href="projets.html">Projets</a>
-            <a class="menu__contacts" href="contacts.html">Contacts</a>
+            <a class="menu--acceuil" href="index.html">Acceuil</a>
+            <a class="menu--projets" href="projets.html">Projets</a>
+            <a class="menu--contacts" href="contacts.html">Contacts</a>
+            <button class="light">
+              <img src="./logo/paint-light.svg" alt="" />
+              <p class="light--texte">Light</p>
+            </button>
           </div>
         </div>
       </nav>
@@ -40,27 +44,23 @@
     <section>
       <div class="box">
         <div class="box__ma_photo animate__animated animate__tada"></div>
-        <p class="box__presentation"></p>
-       
+        <p class="box--presentation"></p>
       </div>
 
       <div class="brief">
-        <div class="brief__projets animate__animated  animate__backInLeft">
-          <a class="brief__projets__texte" href="projets.html"></a>
+        <div class="brief__projets animate__animated animate__backInLeft">
+          <a class="brief__projets--texte" href="projets.html"></a>
         </div>
-        <div class="brief__apropos animate__animated  animate__backInRight">
-          <a class="brief__apropos__texte" href="contacts.html"></a>
+        <div class="brief__apropos animate__animated animate__backInRight">
+          <a class="brief__apropos--texte" href="contacts.html"></a>
         </div>
       </div>
     </section>
 
-    <div class="box_logos">
-    </div>
-
- 
-    
+    <div class="box_logos animate__animated animate__fadeInUp"></div>
 
     <script src="app_acceuil.js"></script>
+
+    <script src="./Js/DarkLight.js"></script>
   </body>
 </html>
-
