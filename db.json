@@ -70,7 +70,15 @@
     {
       "icone_light": "./logo/paint-light.svg"
     }
+  ],
+  "github": [
+    {
+      "kda_link": "https://kevinarmache.github.io/5.-Reproduction-de-la-page-d-accueil-et-la-page-Emploi-du-site-web-de-KDA/",
+      "kda_image": "./images/kda.png",
+      "liste_de_contact_link": "https://kevinarmache.github.io/KDA-6---R-aliser-une-liste-de-contacts/",
+      "liste_de_contact_image": "./images/ldc.png"
+    }
   ]
 
-  
+ 
 }

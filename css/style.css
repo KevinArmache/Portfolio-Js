@@ -246,66 +246,66 @@ header .logo {
   overflow: hidden;
 }
 
-#mes__projets__apercu1 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
 }
-#mes__projets__apercu1:hover {
+.mes__projets__apercu:hover {
   border-radius: 20px;
   border: solid 5px #40e0d0;
   transition: all 0.5s linear;
   border-radius: 20px;
 }
-#mes__projets__apercu1--site1 {
+.mes__projets__apercu--site {
   border-radius: 20px;
   height: 100%;
   width: 100%;
 }
 
-#mes__projets__apercu2 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
 }
-#mes__projets__apercu2:hover {
+.mes__projets__apercu:hover {
   border: solid 5px #40e0d0;
   transition: all 0.5s linear;
   border-radius: 20px;
 }
-#mes__projets__apercu2--site2 {
+.mes__projets__apercu--site {
   border-radius: 20px;
   height: 100%;
   width: 100%;
 }
 
-#mes__projets__apercu3 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
 }
-#mes__projets__apercu3:hover {
+.mes__projets__apercu:hover {
   border: solid 5px #40e0d0;
   transition: all 0.5s linear;
   border-radius: 20px;
 }
-#mes__projets__apercu3--site3 {
+.mes__projets__apercu--site {
   border-radius: 20px;
   height: 100%;
   width: 100%;
 }
 
-#mes__projets__apercu4 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
 }
-#mes__projets__apercu4:hover {
+.mes__projets__apercu:hover {
   border: solid 5px #40e0d0;
   transition: all 0.5s linear;
   border-radius: 20px;
 }
-#mes__projets__apercu4--site4 {
+.mes__projets__apercu--site {
   border-radius: 20px;
   height: 100%;
   width: 100%;
@@ -503,34 +503,34 @@ header .logo {
     width: 90%;
   }
 
-  #mes__projets__apercu1 {
+  .mes__projets__apercu {
     width: 90%;
   }
-  #mes__projets__apercu1--site1 {
+  .mes__projets__apercu--site {
     height: 100%;
     width: 100%;
   }
 
-  #mes__projets__apercu2 {
+  .mes__projets__apercu {
     width: 90%;
   }
-  #mes__projets__apercu2--site2 {
+  .mes__projets__apercu--site {
     height: 100%;
     width: 100%;
   }
 
-  #mes__projets__apercu3 {
+  .mes__projets__apercu {
     width: 90%;
   }
-  #mes__projets__apercu3--site3 {
+  .mes__projets__apercu--site {
     height: 100%;
     width: 100%;
   }
 
-  #mes__projets__apercu4 {
+  .mes__projets__apercu {
     width: 90%;
   }
-  #mes__projets__apercu4--site4 {
+  .mes__projets__apercu--site {
     height: 100%;
     width: 100%;
   }

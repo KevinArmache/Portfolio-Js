@@ -1,34 +1,89 @@
 window.onload = function () {
-  let mes__projets = document.querySelector(".mes__projets");
-  for (let i = 1; i <= 4; i++) {
-    let mes__projets__apercu = document.createElement("a");
-    mes__projets__apercu.setAttribute("id", "mes__projets__apercu" + i);
-    mes__projets__apercu.setAttribute(
-      "href",
-      "https://kevinarmache.github.io/5.-Reproduction-de-la-page-d-accueil-et-la-page-Emploi-du-site-web-de-KDA/"
-    );
-    mes__projets.appendChild(mes__projets__apercu);
-    let mes__projets__apercu__images = document.createElement("img");
-    mes__projets__apercu__images.setAttribute(
-      "id",
-      "mes__projets__apercu" + i + "--site" + i
-    );
-    mes__projets__apercu__images.setAttribute("src", "./images/kda.png");
-    mes__projets__apercu.appendChild(mes__projets__apercu__images);
-    if (i == 1) {
-      mes__projets__apercu.classList.add("animate__animated");
-      mes__projets__apercu.classList.add("animate__backInLeft");
-    } else if (i == 2) {
-      mes__projets__apercu.classList.add("animate__animated");
-      mes__projets__apercu.classList.add("animate__backInRight");
-    } else if (i == 3) {
-      mes__projets__apercu.classList.add("animate__animated");
-      mes__projets__apercu.classList.add("animate__backInLeft");
-    } else if (i == 4) {
-      mes__projets__apercu.classList.add("animate__animated");
-      mes__projets__apercu.classList.add("animate__backInRight");
-    }
-  }
+  const mes__projets = document.querySelector(".mes__projets");
+  fetch("http://localhost:3000/github")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      for (let i of data) {
+        if (i.kda_image === "./images/kda.png") {
+          let mes__projets__apercu = document.createElement("a");
+          mes__projets.appendChild(mes__projets__apercu);
+          mes__projets__apercu.setAttribute("class", "mes__projets__apercu");
+          mes__projets__apercu.setAttribute("href", `${i.kda_link}`);
+          mes__projets__apercu.classList.add("animate__animated");
+          mes__projets__apercu.classList.add("animate__backInLeft");
+
+          let mes__projets__apercu__images = document.createElement("img");
+          mes__projets__apercu.appendChild(mes__projets__apercu__images);
+          mes__projets__apercu__images.setAttribute(
+            "class",
+            "mes__projets__apercu--site"
+          );
+          mes__projets__apercu__images.setAttribute("src", `${i.kda_image}`);
+        } //
+           if (i.liste_de_contact_image === "./images/ldc.png") {
+          let mes__projets__apercu = document.createElement("a");
+          mes__projets.appendChild(mes__projets__apercu);
+          mes__projets__apercu.setAttribute("class", "mes__projets__apercu");
+          mes__projets__apercu.setAttribute(
+            "href",
+            `${i.liste_de_contact_link}`
+          );
+          mes__projets__apercu.classList.add("animate__animated");
+          mes__projets__apercu.classList.add("animate__backInRight");
+          //finition avec lien
+          let mes__projets__apercu__images = document.createElement("img");
+          mes__projets__apercu.appendChild(mes__projets__apercu__images);
+          mes__projets__apercu__images.setAttribute(
+            "class",
+            "mes__projets__apercu--site"
+          );
+          mes__projets__apercu__images.setAttribute("src", `${i.liste_de_contact_image}`);
+        }
+
+        //
+
+        if (i.kda_image === "./images/kda.png") {
+          let mes__projets__apercu = document.createElement("a");
+          mes__projets.appendChild(mes__projets__apercu);
+          mes__projets__apercu.setAttribute("class", "mes__projets__apercu");
+          mes__projets__apercu.setAttribute("href", `${i.kda_link}`);
+          mes__projets__apercu.classList.add("animate__animated");
+          mes__projets__apercu.classList.add("animate__backInLeft");
+
+          let mes__projets__apercu__images = document.createElement("img");
+          mes__projets__apercu.appendChild(mes__projets__apercu__images);
+          mes__projets__apercu__images.setAttribute(
+            "class",
+            "mes__projets__apercu--site"
+          );
+          mes__projets__apercu__images.setAttribute("src", `${i.kda_image}`);
+        } 
+
+        //
+
+        if (i.liste_de_contact_image === "./images/ldc.png") {
+          let mes__projets__apercu = document.createElement("a");
+          mes__projets.appendChild(mes__projets__apercu);
+          mes__projets__apercu.setAttribute("class", "mes__projets__apercu");
+          mes__projets__apercu.setAttribute(
+            "href",
+            `${i.liste_de_contact_link}`
+          );
+          mes__projets__apercu.classList.add("animate__animated");
+          mes__projets__apercu.classList.add("animate__backInRight");
+          //finition avec lien
+          let mes__projets__apercu__images = document.createElement("img");
+          mes__projets__apercu.appendChild(mes__projets__apercu__images);
+          mes__projets__apercu__images.setAttribute(
+            "class",
+            "mes__projets__apercu--site"
+          );
+          mes__projets__apercu__images.setAttribute("src", `${i.liste_de_contact_image}`);
+        }
+      }
+    });
 
   //
 
@@ -134,3 +189,34 @@ window.onload = function () {
       }
     });
 };
+
+// let mes__projets = document.querySelector(".mes__projets");
+// for (let i = 1; i <= 4; i++) {
+//   let mes__projets__apercu = document.createElement("a");
+//   mes__projets__apercu.setAttribute("id", "mes__projets__apercu");
+//   mes__projets__apercu.setAttribute(
+//     "href",
+//     "https://kevinarmache.github.io/5.-Reproduction-de-la-page-d-accueil-et-la-page-Emploi-du-site-web-de-KDA/"
+//   );
+//   mes__projets.appendChild(mes__projets__apercu);
+//   let mes__projets__apercu__images = document.createElement("img");
+//   mes__projets__apercu__images.setAttribute(
+//     "id",
+//     "mes__projets__apercu" + i + "--site" + i
+//   );
+//   mes__projets__apercu__images.setAttribute("src", "./images/kda.png");
+//   mes__projets__apercu.appendChild(mes__projets__apercu__images);
+//   if (i == 1) {
+//     mes__projets__apercu.classList.add("animate__animated");
+//     mes__projets__apercu.classList.add("animate__backInLeft");
+//   } else if (i == 2) {
+//     mes__projets__apercu.classList.add("animate__animated");
+//     mes__projets__apercu.classList.add("animate__backInRight");
+//   } else if (i == 3) {
+//     mes__projets__apercu.classList.add("animate__animated");
+//     mes__projets__apercu.classList.add("animate__backInLeft");
+//   } else if (i == 4) {
+//     mes__projets__apercu.classList.add("animate__animated");
+//     mes__projets__apercu.classList.add("animate__backInRight");
+//   }
+// }

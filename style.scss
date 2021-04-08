@@ -158,7 +158,7 @@ header {
   margin-top: 4vh;
   overflow: hidden;
 }
-#mes__projets__apercu1 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
@@ -168,13 +168,13 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &--site1 {
+  &--site {
     border-radius: 20px;
     height: 100%;
     width: 100%;
   }
 }
-#mes__projets__apercu2 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
@@ -183,14 +183,14 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &--site2 {
+  &--site {
     border-radius: 20px;
     height: 100%;
     width: 100%;
   }
 }
 
-#mes__projets__apercu3 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
@@ -199,13 +199,13 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &--site3 {
+  &--site {
     border-radius: 20px;
     height: 100%;
     width: 100%;
   }
 }
-#mes__projets__apercu4 {
+.mes__projets__apercu {
   border: solid 5px #252839;
   height: 45%;
   width: 40%;
@@ -214,7 +214,7 @@ header {
     transition: all 0.5s linear;
     border-radius: 20px;
   }
-  &--site4 {
+  &--site {
     border-radius: 20px;
     height: 100%;
     width: 100%;
