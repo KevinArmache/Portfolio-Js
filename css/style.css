@@ -10,12 +10,12 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .mes_contacts__images_Discord {
+  .mes_contacts__images:nth-child(5) {
     display: none;
   }
 }
 @media screen and (max-width: 280px) {
-  .mes_contacts__images_Twitter {
+  .mes_contacts__images:nth-child(6) {
     display: none;
   }
 }
@@ -31,12 +31,12 @@
   }
 }
 @media screen and (max-width: 380px) {
-  .mes_contacts__images_Discord {
+  .mes_contacts__images:nth-child(5) {
     display: none;
   }
 }
 @media screen and (max-width: 280px) {
-  .mes_contacts__images_Twitter {
+  .mes_contacts__images:nth-child(6) {
     display: none;
   }
 }

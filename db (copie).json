@@ -1,0 +1,84 @@
+{
+  "box": [
+    {
+      "box__ma_photo__photo": "./images/profile.jpg",
+      "box__presentation": "Salut je m'appelle Kevin Armache je suis un developpeur fullstack je maitrise le front-end ainsi que le back-end, aussi capable de ressoudre des problemes, travailler sur chaque étape de création d’un site ou d’une application, du développement à la production."
+    }
+  ],
+  
+  "brief__projets": [
+    {
+      "brief__projets__texte": "Mes projets"
+    }
+  ],
+
+  "brief__apropos": [
+    {
+      "brief__apropos__texte": "Mes contacts"
+    }
+  ],
+
+  "mes__competences": [
+    {
+      "mes__competences__mot": "Compétences"
+    }
+  ],
+
+  "box_logos": [
+    {
+      "box_logo__logo1": "logo/js-brands.svg",
+      "box_logo__logo2": "./logo/react-brands.svg",
+      "box_logo__logo3": "./logo/html5-brands.svg",
+      "box_logo__logo4": "./logo/css3-alt-brands.svg"
+    }
+  ],
+
+  "icone_contacts": [
+    {
+      "icones_contacts__logo": "<K/A>"
+    }
+  ],
+  "mes_contacts": [
+    {
+      "mes_contacts__texte": "Contacts"
+    }
+  ],
+  "reseaux_sociaux": [
+    "Facebook",
+    "Whatsapp",
+    "Twitter",
+    "Mail",
+    "Discord",
+    "Twitch"
+  ],
+
+  "mes_contacts__reseaux_sociaux": [
+    "./logo/fb.svg",
+    "./logo/wa.svg",
+    "./logo/twitter.svg",
+    "./logo/mail.svg",
+    "./logo/discord.svg",
+    "./logo/twitch.svg"
+  ],
+  "CV": [
+    {
+      "CV_icone": "./logo/file-pdf-solid.svg"
+    }
+  ],
+
+  "mode_light": [
+    {
+      "icone_light": "./logo/paint-light.svg"
+    }
+  ],
+  "github": [
+    {
+      "kda_link": "https://kevinarmache.github.io/5.-Reproduction-de-la-page-d-accueil-et-la-page-Emploi-du-site-web-de-KDA/",
+      "kda_image": "./images/kda.png",
+      "liste_de_contact_link": "https://kevinarmache.github.io/KDA-6---R-aliser-une-liste-de-contacts/",
+      "liste_de_contact_image": "./images/ldc.png"
+    }
+  ]
+
+ 
+}
