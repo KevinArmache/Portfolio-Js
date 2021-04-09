@@ -1,9 +1,9 @@
 @import "./sass/menu.scss";
 @import "./sass/mediaqueries.scss";
-@import "./sass/mediaqueries.scss";
 
 $couleur_primaire: white;
 $couleur_secondaire: #40e0d0;
+$couleur_bgc: #252839;
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ $couleur_secondaire: #40e0d0;
 }
 
 body {
-  background-color: #252839;
+  background-color: $couleur_bgc;
 }
 .logo:hover {
   color: $couleur_secondaire;
@@ -26,7 +26,7 @@ header {
   margin: 0 auto;
   margin-top: 5vh;
   border-radius: 20px;
-  border: solid 4px #252839;
+  border: solid 4px $couleur_bgc;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -86,7 +86,7 @@ header {
     height: 15vh;
     margin: 0 auto;
     border-radius: 20px;
-    border: solid 2px #252839;
+    border: solid 2px $couleur_bgc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -117,7 +117,7 @@ header {
     color: $couleur_primaire;
     text-decoration: none;
     border-radius: 20px;
-    border: solid 2px #252839;
+    border: solid 2px $couleur_bgc;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ header {
   overflow: hidden;
 }
 .mes__projets__apercu {
-  border: solid 5px #252839;
+  border: solid 5px $couleur_bgc;
   height: 45%;
   width: 40%;
   &:hover {
@@ -175,7 +175,7 @@ header {
   }
 }
 .mes__projets__apercu {
-  border: solid 5px #252839;
+  border: solid 5px $couleur_bgc;
   height: 45%;
   width: 40%;
   &:hover {
@@ -191,7 +191,7 @@ header {
 }
 
 .mes__projets__apercu {
-  border: solid 5px #252839;
+  border: solid 5px $couleur_bgc;
   height: 45%;
   width: 40%;
   &:hover {
@@ -206,7 +206,7 @@ header {
   }
 }
 .mes__projets__apercu {
-  border: solid 5px #252839;
+  border: solid 5px $couleur_bgc;
   height: 45%;
   width: 40%;
   &:hover {
@@ -218,7 +218,6 @@ header {
     border-radius: 20px;
     height: 100%;
     width: 100%;
-    filter: invert(0%);
   }
 }
 .mes__competences {
@@ -230,7 +229,7 @@ header {
     text-align: center;
     font-size: 30px;
     color: $couleur_primaire;
-    border: solid 2px #252839;
+    border: solid 2px $couleur_bgc;
 
     width: 20%;
     &:hover {
@@ -279,8 +278,7 @@ header {
     text-align: center;
     font-size: 30px;
     color: $couleur_primaire;
-    border: solid 2px #252839;
-
+    border: solid 2px $couleur_bgc;
     width: 15%;
     &:hover {
       border-bottom: solid 2px $couleur_secondaire;
@@ -289,6 +287,13 @@ header {
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
     }
+  }
+  .hover {
+    border-bottom: solid 2px $couleur_secondaire;
+    border-top: solid 2px $couleur_secondaire;
+    transition: all 0.5s linear;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   &__reseaux_sociaux {
@@ -299,8 +304,8 @@ header {
     width: 70vw;
     padding: 30px;
     transition: all 1s linear;
-    border-left: solid 5px #252839;
-    border-right: solid 5px #252839;
+    border-left: solid 5px $couleur_bgc;
+    border-right: solid 5px $couleur_bgc;
     transition: all 1s linear;
 
     &:hover {
@@ -332,14 +337,14 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border: solid 2px #252839;
+  border: solid 2px $couleur_bgc;
   width: 10%;
   padding-bottom: 5px;
-  background-color: #252839;
+  background-color: $couleur_bgc;
   border-left: none;
   border-top: none;
   border-right: none;
-  color: white;
+  color: $couleur_primaire;
   font-family: Lato;
   &:hover {
     border-bottom: solid 2px $couleur_secondaire;
@@ -351,13 +356,10 @@ header {
 
 //---------progress bar--------------
 
-
-
 progress {
   width: 100%;
   appearance: none;
   -webkit-appearance: none;
-
 }
 .barre_de_progression1 {
   display: flex;
@@ -366,19 +368,17 @@ progress {
   align-items: center;
 }
 .barre_de_progression--jauge1::-webkit-progress-bar {
-  background-color: white;
+  background-color: $couleur_primaire;
   margin-top: 2px;
   height: 50%;
   border-radius: 5px;
-  
 }
 .barre_de_progression--jauge1::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: $couleur_secondaire;
 }
 
 //progress bar 2
-
 
 .barre_de_progression2 {
   display: flex;
@@ -387,20 +387,18 @@ progress {
   align-items: center;
 }
 .barre_de_progression--jauge2::-webkit-progress-bar {
-  background-color: white;
+  background-color: $couleur_primaire;
   margin-top: 2px;
   height: 50%;
   border-radius: 5px;
-  
 }
 .barre_de_progression--jauge2::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: $couleur_secondaire;
+
 }
 
-
 //progress bar 3
-
 
 .barre_de_progression3 {
   display: flex;
@@ -409,19 +407,17 @@ progress {
   align-items: center;
 }
 .barre_de_progression--jauge3::-webkit-progress-bar {
-  background-color: white;
+  background-color: $couleur_primaire;
   margin-top: 2px;
   height: 50%;
   border-radius: 5px;
-  
 }
 .barre_de_progression--jauge3::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: $couleur_secondaire;
 }
 
 //progress bar 4
-
 
 .barre_de_progression4 {
   display: flex;
@@ -430,16 +426,16 @@ progress {
   align-items: center;
 }
 .barre_de_progression--jauge4::-webkit-progress-bar {
-  background-color: white;
+  background-color: $couleur_primaire;
   margin-top: 2px;
   height: 50%;
   border-radius: 5px;
-  
 }
 .barre_de_progression--jauge4::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: $couleur_secondaire;
 }
-
-
+.icon:hover {
+  fill: #40e0d0;
+}
 

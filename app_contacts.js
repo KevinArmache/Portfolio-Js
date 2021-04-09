@@ -1,6 +1,6 @@
 window.onload = function () {
   const icone_contacts__logo = document.querySelector(".icone_contacts--logo");
-  fetch("http://localhost:3000/contacts")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -12,7 +12,7 @@ window.onload = function () {
     });
 
   const mes_contacts_texte = document.querySelector(".mes_contacts--texte");
-  fetch("http://localhost:3000/contacts")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -26,7 +26,7 @@ window.onload = function () {
   const mes_contacts__images = document.querySelector(
     ".mes_contacts__reseaux_sociaux"
   );
-  fetch("http://localhost:3000/contacts")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -127,7 +127,9 @@ window.onload = function () {
 
       //
       const CV = document.querySelector(".CV");
-      fetch("http://localhost:3000/contacts")
+      fetch(
+        "https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts"
+      )
         .then(function (response) {
           return response.json();
         })
@@ -144,3 +146,20 @@ window.onload = function () {
         });
     });
 };
+
+// const hovericon = document.querySelector(".mes_contacts__reseaux_sociaux");
+// const hovertext = document.querySelector(".mes_contacts--texte");
+// const hoverimage = document.querySelector(".mes_contacts__images")
+
+// hovericon.addEventListener("mouseover", function(){
+
+// // hovertext.classList.toggle("hover")
+
+// })
+
+
+// border-bottom: solid 2px $couleur_secondaire;
+// border-top: solid 2px $couleur_secondaire;
+// transition: all 0.5s linear;
+// border-top-left-radius: 20px;
+// border-top-right-radius: 20px;

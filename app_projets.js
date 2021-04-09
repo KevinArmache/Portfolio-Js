@@ -1,6 +1,6 @@
 window.onload = function () {
   const mes__projets = document.querySelector(".mes__projets");
-  fetch("http://localhost:3000/projets")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/projets")
     .then(function (response) {
       return response.json();
     })
@@ -90,7 +90,7 @@ window.onload = function () {
   const mes__competences__mot = document.querySelector(
     ".mes__competences--texte"
   );
-  fetch("http://localhost:3000/projets")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/projets")
     .then(function (response) {
       return response.json();
     })
@@ -103,7 +103,7 @@ window.onload = function () {
 
   //
   const box_logos = document.querySelector(".box_logos");
-  fetch("http://localhost:3000/acceuil")
+  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/acceuil")
     .then(function (response) {
       return response.json();
     })

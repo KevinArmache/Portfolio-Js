@@ -1,21 +1,26 @@
-@media screen and (max-height: 1100px) {
+@media screen and (max-width: 605px) {
+  .brief {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 35vh !important;
+  }
+  .brief__projets {
+    width: 65% !important;
+  }
   .brief__apropos {
-    height: 10vh !important;
-    width: 40% !important;
+    width: 65% !important;
   }
 
-  .brief__projets {
-    height: 10vh !important;
-    width: 40% !important;
+  .box {
+    margin-bottom: 50px;
   }
-}
-@media screen and (max-width: 380px) {
-  .mes_contacts__images:nth-child(5) {
-    display: none;
+
+  .mes_contacts--texte {
+    width: 50% !important;
   }
-}
-@media screen and (max-width: 280px) {
-  .mes_contacts__images:nth-child(6) {
+
+  .light {
     display: none;
   }
 }
@@ -309,7 +314,6 @@ header .logo {
   border-radius: 20px;
   height: 100%;
   width: 100%;
-  filter: invert(0%);
 }
 
 .mes__competences {
@@ -374,6 +378,13 @@ header .logo {
   width: 15%;
 }
 .mes_contacts--texte:hover {
+  border-bottom: solid 2px #40e0d0;
+  border-top: solid 2px #40e0d0;
+  transition: all 0.5s linear;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.mes_contacts .hover {
   border-bottom: solid 2px #40e0d0;
   border-top: solid 2px #40e0d0;
   transition: all 0.5s linear;
@@ -510,32 +521,8 @@ header .logo {
     height: 100%;
     width: 100%;
   }
-
-  .mes__projets__apercu {
-    width: 90%;
-  }
-  .mes__projets__apercu--site {
-    height: 100%;
-    width: 100%;
-  }
-
-  .mes__projets__apercu {
-    width: 90%;
-  }
-  .mes__projets__apercu--site {
-    height: 100%;
-    width: 100%;
-  }
-
-  .mes__projets__apercu {
-    width: 90%;
-  }
-  .mes__projets__apercu--site {
-    height: 100%;
-    width: 100%;
-  }
 }
-@media screen and (max-width: 500px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .brief {
     display: flex;
     justify-content: space-evenly;
@@ -564,7 +551,7 @@ header .logo {
     padding: 10px;
   }
 }
-@media screen and (max-width: 500px) and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   .mes_contacts__images {
     width: 90%;
   }
@@ -572,32 +559,6 @@ header .logo {
   .mes__competences--texte {
     width: 50%;
     margin-bottom: -10px;
-  }
-}
-@media screen and (max-width: 605px) {
-  .brief {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 35vh !important;
-  }
-  .brief__projets {
-    width: 65% !important;
-  }
-  .brief__apropos {
-    width: 65% !important;
-  }
-
-  .box {
-    margin-bottom: 50px;
-  }
-
-  .mes_contacts--texte {
-    width: 50% !important;
-  }
-
-  .light {
-    display: none;
   }
 }
 progress {
@@ -622,7 +583,7 @@ progress {
 
 .barre_de_progression--jauge1::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: #40e0d0;
 }
 
 .barre_de_progression2 {
@@ -641,7 +602,7 @@ progress {
 
 .barre_de_progression--jauge2::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: #40e0d0;
 }
 
 .barre_de_progression3 {
@@ -660,7 +621,7 @@ progress {
 
 .barre_de_progression--jauge3::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: #40e0d0;
 }
 
 .barre_de_progression4 {
@@ -679,7 +640,11 @@ progress {
 
 .barre_de_progression--jauge4::-webkit-progress-value {
   border-radius: 5px;
-  background-color: turquoise;
+  background-color: #40e0d0;
+}
+
+.icon:hover {
+  fill: #40e0d0;
 }
 
 /*# sourceMappingURL=style.css.map */
