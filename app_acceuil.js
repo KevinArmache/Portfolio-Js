@@ -3,7 +3,7 @@ window.onload = function () {
   const box__ma_photo__photo = document.createElement("img");
   box__ma_photo__photo.setAttribute("id", "box__ma_photo--photo");
   box__ma_photo.appendChild(box__ma_photo__photo);
-  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/acceuil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/:acceuil")
     .then(function (response) {
       return response.json();
     })
@@ -15,7 +15,7 @@ window.onload = function () {
 
   //
   const box__presentation = document.querySelector(".box--presentation");
-  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/acceuil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/:acceuil")
     .then(function (response) {
       return response.json();
     })
@@ -30,7 +30,7 @@ window.onload = function () {
     ".brief__projets--texte"
   );
 
-  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/acceuil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/:acceuil")
     .then(function (response) {
       return response.json();
     })
@@ -46,7 +46,7 @@ window.onload = function () {
   const brief__apropos__texte = document.querySelector(
     ".brief__apropos--texte"
   );
-  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/acceuil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/:acceuil")
     .then(function (response) {
       return response.json();
     })
@@ -60,7 +60,7 @@ window.onload = function () {
 //logo
 
 const box_logos = document.querySelector(".box_logos");
-fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/acceuil")
+fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/:acceuil")
   .then(function (response) {
     return response.json();
   })
