@@ -46,7 +46,7 @@ window.onload = function () {
   const brief__apropos__texte = document.querySelector(
     ".brief__apropos--texte"
   );
-  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/accueil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/accueil") 
     .then(function (response) {
       return response.json();
     })
@@ -57,7 +57,7 @@ window.onload = function () {
       }
     });
 };
-//logo
+///logo
 
 const box_logos = document.querySelector(".box_logos");
 fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/accueil")
