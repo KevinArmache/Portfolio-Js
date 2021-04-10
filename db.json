@@ -41,14 +41,5 @@
     "Mail",
     "Discord",
     "Twitch"
-  ],
-
-  "mode_light": [
-    {
-      "icone_light": "./logo/paint-light.svg"
-    }
   ]
-
-
- 
 }
