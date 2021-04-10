@@ -5,7 +5,7 @@
       "box__presentation": "Salut je m'appelle Kevin Armache je suis un développeur fullstack je maitrise le front-end ainsi que le back-end, aussi capable de ressoudre des problèmes, travailler sur chaque étape de création d’un site ou d’une application, du développement à la production.",
       "brief__projets__texte": "Mes projets",
       "brief__apropos__texte": "Mes contacts",
-      "box_logo__logo1": "logo/js-brands.svg",
+      "box_logo__logo1": "./logo/js-brands.svg",
       "box_logo__logo2": "./logo/react-brands.svg",
       "box_logo__logo3": "./logo/html5-brands.svg",
       "box_logo__logo4": "./logo/css3-alt-brands.svg"
