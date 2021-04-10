@@ -1,6 +1,6 @@
 window.onload = function () {
   const mes__projets = document.querySelector(".mes__projets");
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/projets")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/projets")
     .then(function (response) {
       return response.json();
     })
@@ -22,7 +22,7 @@ window.onload = function () {
           );
           mes__projets__apercu__images.setAttribute("src", `${i.kda_image}`);
         } //
-           if (i.liste_de_contact_image === "./images/ldc.png") {
+        if (i.liste_de_contact_image === "./images/ldc.png") {
           let mes__projets__apercu = document.createElement("a");
           mes__projets.appendChild(mes__projets__apercu);
           mes__projets__apercu.setAttribute("class", "mes__projets__apercu");
@@ -39,7 +39,10 @@ window.onload = function () {
             "class",
             "mes__projets__apercu--site"
           );
-          mes__projets__apercu__images.setAttribute("src", `${i.liste_de_contact_image}`);
+          mes__projets__apercu__images.setAttribute(
+            "src",
+            `${i.liste_de_contact_image}`
+          );
         }
 
         //
@@ -59,7 +62,7 @@ window.onload = function () {
             "mes__projets__apercu--site"
           );
           mes__projets__apercu__images.setAttribute("src", `${i.kda_image}`);
-        } 
+        }
 
         //
 
@@ -80,7 +83,10 @@ window.onload = function () {
             "class",
             "mes__projets__apercu--site"
           );
-          mes__projets__apercu__images.setAttribute("src", `${i.liste_de_contact_image}`);
+          mes__projets__apercu__images.setAttribute(
+            "src",
+            `${i.liste_de_contact_image}`
+          );
         }
       }
     });
@@ -90,7 +96,7 @@ window.onload = function () {
   const mes__competences__mot = document.querySelector(
     ".mes__competences--texte"
   );
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/projets")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/projets")
     .then(function (response) {
       return response.json();
     })
@@ -103,7 +109,7 @@ window.onload = function () {
 
   //
   const box_logos = document.querySelector(".box_logos");
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/acceuil")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/accueil")
     .then(function (response) {
       return response.json();
     })

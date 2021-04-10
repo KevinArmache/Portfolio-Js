@@ -1,6 +1,6 @@
 window.onload = function () {
   const icone_contacts__logo = document.querySelector(".icone_contacts--logo");
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -12,7 +12,7 @@ window.onload = function () {
     });
 
   const mes_contacts_texte = document.querySelector(".mes_contacts--texte");
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -26,7 +26,7 @@ window.onload = function () {
   const mes_contacts__images = document.querySelector(
     ".mes_contacts__reseaux_sociaux"
   );
-  fetch("https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts")
+  fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/contacts")
     .then(function (response) {
       return response.json();
     })
@@ -127,9 +127,7 @@ window.onload = function () {
 
       //
       const CV = document.querySelector(".CV");
-      fetch(
-        "https://my-json-server.typicode.com/KevinArmache/Portfolio/contacts"
-      )
+      fetch("https://607071e685c3f0001747026c.mockapi.io/portfolio/V1/contacts")
         .then(function (response) {
           return response.json();
         })
@@ -156,7 +154,6 @@ window.onload = function () {
 // // hovertext.classList.toggle("hover")
 
 // })
-
 
 // border-bottom: solid 2px $couleur_secondaire;
 // border-top: solid 2px $couleur_secondaire;
